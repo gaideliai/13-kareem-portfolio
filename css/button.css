@@ -12,7 +12,6 @@
     .btn:hover {
         background-color: var(--main-color);
         color: #fff;
-        letter-spacing: 2px;
     }
     .btn.bg-red {
         background-color: var(--secondary-color);
@@ -34,15 +33,12 @@
     }
     .btn.h-t-red:hover {
         color: var(--secondary-color);
-        letter-spacing: 2px;
     }
     .btn.h-t-black:hover {
         color: #333;
-        letter-spacing: normal;
     }
     .btn.h-t-white:hover {
         color: #fff;
-        letter-spacing: 2px;
     }
     .btn.h-b-red:hover {
         border-color: var(--secondary-color);
