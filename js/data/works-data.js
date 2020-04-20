@@ -14,7 +14,7 @@ const data = [
     {
         photo: '3.jpg',
         name: 'Open Imagination',
-        categories: ['Branding', 'Creative Work', 'Wordpress']
+        categories: ['Creative Work', 'Wordpress']
     },
     {
         photo: '4.jpg',
@@ -29,7 +29,7 @@ const data = [
     {
         photo: '6.jpg',
         name: 'Backpack Contents',
-        categories: ['Responsive Design', 'SEO', 'Wordpress']
+        categories: ['Responsive Design', 'SEO']
     },
     {
         photo: '7.jpg',
@@ -39,7 +39,7 @@ const data = [
     {
         photo: '8.jpg',
         name: 'Travel Diaries',
-        categories: ['Creative Work', 'SEO', 'Responsive Design']
+        categories: ['Creative Work', 'SEO']
     },
     {
         photo: '9.jpg',

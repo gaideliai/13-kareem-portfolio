@@ -4,8 +4,40 @@
 }
     .gallery > .filter {
         display: inline-block;
-        width: 100%;
+        width: calc(100% + 28px);
+        margin: 0 -5px;
     }
+        .gallery > .filter > .tag {
+            display: inline-block;
+            padding: 5px 14px;
+            float: left;
+            color: #444;
+            font-size: 20px;
+            text-transform: capitalize;
+            line-height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+            .gallery > .filter > .tag::after {
+                content: "*";                
+                position: absolute;
+                top: 3px;
+                display: inline-block;
+                color: #bbb;
+                margin: 5px 10px; 
+            }
+            .gallery > .filter > .tag:last-child::after {
+                content: "";                
+                position: absolute;
+                top: 3px;
+                display: inline-block;
+                color: #bbb;
+                margin: 5px 5px;
+            }
+            .gallery > .filter > .tag:hover,
+            .gallery > .filter > .tag.active {
+                color: var(--secondary-color);
+            }
     .gallery > .list {
         display: inline-block;
         width: calc(100% + 20px);
@@ -17,7 +49,12 @@
             width: calc(100% / 3 - 20px);
             margin: 10px;
             position: relative;
+            border-radius: 10px;
+            overflow: hidden;
         }
+            .gallery > .list > .item.hidden {
+                display: none;
+            }
             .gallery .item > img {
                 display: inline-block;
                 width: 100%;
@@ -27,24 +64,41 @@
             }
             .gallery .item > .text {
                 display: none;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
                 position: absolute;
                 top: 0;
                 right: 0;
                 left: 0;
                 bottom: 0;
-                background-color: #f005;
+                background-color: transparent;
                 color: #fff;
                 font-size: 30px;
+                text-align: center;
+                transition: all 0.5s;
             }
                 .gallery .item h5 {
-                    
+                    display: inline-block;
+                    width: 80%;
                 }
                 .gallery .item ul {
-                    
+                    display: inline-block;
+                    width: 80%;
                 }
                     .gallery .item li {
-                        
+                        display: inline-block;
+                        padding: 0 5px;
+                        margin: 5px;
+                        list-style: none;
+                        background-color: var(--main-color);
+                        color: #fff;
+                        font-size: 17px;
+                        line-height: 20px;
                     }
             .gallery .item:hover > .text {
-                display: inline-block;
+                display: flex;                
+            }
+            .gallery .item > .text:hover {
+                background-color: #f005;
             }
