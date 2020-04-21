@@ -17,23 +17,7 @@
             line-height: 30px;
             cursor: pointer;
             position: relative;
-        }
-            .gallery > .filter > .tag::after {
-                content: "*";                
-                position: absolute;
-                top: 3px;
-                display: inline-block;
-                color: #bbb;
-                margin: 5px 10px; 
-            }
-            .gallery > .filter > .tag:last-child::after {
-                content: "";                
-                position: absolute;
-                top: 3px;
-                display: inline-block;
-                color: #bbb;
-                margin: 5px 5px;
-            }
+        }            
             .gallery > .filter > .tag:hover,
             .gallery > .filter > .tag.active {
                 color: var(--secondary-color);
